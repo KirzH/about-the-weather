@@ -1,0 +1,8 @@
+.block_two {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(218, 47, 218);
+    box-shadow: 0px 4px 20px rgb(14, 245, 83);
+	border: 2px solid rgb(77, 235, 124);;
+	border-radius: 10px;
+}
