@@ -13,7 +13,7 @@ const Cities = () => {
 					<textarea></textarea>
 				</div>
 				<div>
-					<butonn class='btn btn-info'>Add cities</butonn>
+					<butonn className='btn_add btn-info'>Add City</butonn>
 				</div>
 			</div>
 		</div>
