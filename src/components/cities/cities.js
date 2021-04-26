@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import './cities.css'
 
 export default class Cities extends Component {
-	render() {
+	
 		return (
-            let postElements = props.myCities.map(p =>())
 			<div className='block_one'>
 				<div>
 					<h1>Cities:</h1>
