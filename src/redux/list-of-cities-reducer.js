@@ -20,7 +20,7 @@ export const citiesReducer = (state = initialState, action) => {
 			}
 			return {
 				...state,
-				myCities: [...state.posts, newPost],
+				myCities: [...state.myСities, newPost],
 				newCityText: '',
 			}
 		}
@@ -35,7 +35,7 @@ export const citiesReducer = (state = initialState, action) => {
 	}
 }
 
-export const addPostActionCreater = () => ({ type: ADD_POST })
+export const addPostActionCreator = () => ({ type: ADD_POST })
 export const updateNewPostTextActionCreator = (text) => ({
 	type: UPDATE_NEW_POST_TEXT,
 	newText: text,
