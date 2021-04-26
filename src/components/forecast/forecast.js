@@ -1,11 +1,14 @@
 import React from 'react'
 import './forecast.css'
 
-const Forecast = () => {
+const Forecast = (props) => {
 	return (
 		<div className='block_two'>
 			<div>
-				<h1>Forecast:</h1>
+				<h1>
+					Forecast:
+					<p>{props.zip}</p>
+				</h1>
 			</div>
 		</div>
 	)

@@ -7,8 +7,8 @@ const App = (props) => {
 	return (
 		<div className='wrapper'>
 			<div className='block'>
-				<Cities />
-				<Forecast />
+				<Cities store={props.store} />
+				<Forecast store={props.store} />
 			</div>
 		</div>
 	)

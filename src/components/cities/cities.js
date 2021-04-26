@@ -1,23 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './cities.css'
 
-const Cities = () => {
-	return (
-		<div className='block_one'>
-			<div>
-				<h1>Cities:</h1>
-			</div>
-			<div>list</div>
-			<div>
+export default class Cities extends Component {
+	render() {
+		return (
+            let postElements = props.myCities.map(p =>())
+			<div className='block_one'>
 				<div>
-					<textarea></textarea>
+					<h1>Cities:</h1>
 				</div>
+				<div>list</div>
 				<div>
-					<butonn className='btn_add btn-info'>Add City</butonn>
+					<div>
+						<textarea></textarea>
+					</div>
+					<div>
+						<butonn className='btn_add btn-info'>Add City</butonn>
+					</div>
 				</div>
 			</div>
-		</div>
-	)
+		)
+	}
 }
-
-export default Cities
