@@ -1,27 +1,19 @@
+import { cities } from '../assets/cities-list'
 const ADD_POST = 'ADD-POST'
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
 
+console.log(cities)
+
 let initialState = {
-	myСities: [
-		{ id: 1, name: 'New York City', zip: 10279 },
-		{ id: 2, name: 'Atlanta', zip: 30334 },
-		{ id: 3, name: 'Los Angeles', zip: 90071 },
-	],
-	newCityText: 'Washington',
+	myCities: cities
 }
 
 export const citiesReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case ADD_POST: {
-			let newPost = {
-				id: 4,
-				name: state.newCityText,
-				zip: 20230,
-			}
 			return {
 				...state,
-				myCities: [...state.myСities, newPost],
-				newCityText: '',
+				myCities: [...state.myСities]
 			}
 		}
 		case UPDATE_NEW_POST_TEXT: {
